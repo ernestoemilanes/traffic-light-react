@@ -1,13 +1,42 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body {
+    background: rbg(214, 21, 118);
+    background: radial-gradient(circle, rgba(214, 21, 118, 1) 17% rgba(41, 46, 46, 1) 91%);
+    background-color: midnightblue;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+ul {
+    margin: 0;
+    padding: 0;
+}
 
-*/
+li {
+    list-style: none;
+}
+
+.trafficLight {
+    border-radius: 5px;
+    padding: 10px;
+    background: black;
+    margin: auto;
+    width: 70px;
+    li:nth-child(1) {
+        background: red;
+    }
+    li:nth-child(2) {
+        background: yellow;
+    }
+    li:nth-child(3) {
+        background: green;
+    }
+    li{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}
+
+.selected {
+    box-shadow: #fff 0px 0px 40px 20px;
+}
