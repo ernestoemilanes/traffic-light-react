@@ -22,7 +22,7 @@ export function Home() {
 		[color]
 	);
 	return (
-		<div className="text-center mt-5">
+		<div className="trafficContainer text-center mt-5">
 			<ul className="trafficLight">
 				<li
 					onClick={() => setColor("red")}
@@ -37,6 +37,7 @@ export function Home() {
 					className={color === "green" ? "selected" : ""}
 				/>
 			</ul>
+			<div className="trafficPole" />
 		</div>
 	);
 }

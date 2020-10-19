@@ -40,3 +40,15 @@ li {
 .selected {
     box-shadow: #fff 0px 0px 40px 20px;
 }
+
+.trafficContainer {
+    position: relative;
+}
+
+.trafficPole {
+    width: 18px;
+    height: 229px;
+    background-color: black;
+    position: absolute;
+    left: 674px;
+}
